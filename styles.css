@@ -7,11 +7,13 @@ h1, h2, h3, p {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: "avenir next"
 }
 
-.header {
+.header-mobile {
   height: 60px;
   background-color: #59CDDE;
   display: flex;
@@ -19,6 +21,10 @@ body {
   justify-content: space-between;
   padding: 15px;
   margin-bottom: 10px;
+}
+
+.sidebar-desktop {
+  display: none;
 }
 
 .heart-icon {
@@ -62,7 +68,6 @@ body {
   font-weight: 200;
   margin-bottom: 5px;
 }
-
 
 .exercise-visual {
   height: 140px;
@@ -127,4 +132,62 @@ body {
 }
 .cal-btns button:hover {
   cursor: pointer;
+}
+
+
+/*****Media Queries****/
+@media screen and (min-width: 800px) {
+
+  .header-mobile{
+    display: none;
+  }
+
+  .sidebar-desktop {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #59CDDE;
+    width: 170px;
+  }
+
+  .sidebar-desktop img {
+    height: 70px;
+    margin-bottom: 5px;
+    width: 70px;
+  }
+
+
+  .sidebar-desktop p {
+    color: #3f919d;
+  }
+
+  .sidebar-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 170px;
+    width: 170px;
+  }
+
+  .sidebar-nav-item:hover {
+    background-color: #7be6f6;
+    cursor: pointer;
+  }
+
+  .selected:hover {
+    background-color: #e3e9ec;
+  }
+
+  .selected {
+    background-color: #e3e9ec;
+  }
+
+  .selected p {
+    text-align: center;
+  }
+
+  body {
+    flex-direction: row;
+  }
 }
