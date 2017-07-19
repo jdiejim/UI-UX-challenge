@@ -13,6 +13,10 @@ body {
   font-family: "avenir next"
 }
 
+.dashboard-header {
+  display: none;
+}
+
 .header-mobile {
   height: 60px;
   background-color: #59CDDE;
@@ -70,6 +74,7 @@ body {
 }
 
 .exercise-visual {
+  background-color: #fff;
   height: 140px;
   padding: 20px;
   background-image: url('/assets/chair-squats.png');
