@@ -137,6 +137,9 @@ body {
 
 /*****Media Queries****/
 @media screen and (min-width: 800px) {
+  main {
+    background-color: #e3e9ec;
+  }
 
   .header-mobile{
     display: none;
@@ -185,6 +188,34 @@ body {
 
   .selected p {
     text-align: center;
+  }
+
+  .dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .dashboard-heading {
+    font-size: 50px;
+    font-weight: 200;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-info p {
+    font-size: 20px;
+  }
+
+  .avatar {
+    border-radius: 1000px;
+    height: 100px;
+    margin-left: 20px;
+
   }
 
   body {
