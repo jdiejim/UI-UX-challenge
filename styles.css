@@ -2,11 +2,129 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, p {
+  margin: 0;
+}
+
 body {
   margin: 0;
+  font-family: "avenir next"
 }
 
 .header {
   height: 60px;
   background-color: #59CDDE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  height: 40px;
+}
+
+.user-image {
+  border-radius: 1000px;
+  height: 50px;
+}
+
+
+/*TODAYS EXERCISES*/
+.todays-exercises {
+}
+
+.todays-exercises h1 {
+  background-color: #59CDDE;
+  padding: 15px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 28px;
+  border-bottom: 1px solid #2a97a7;
+}
+
+.exercise {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f1f5f8;
+  height: 90px;
+  border-bottom: 1px solid #979797;
+}
+
+.exercise-info {
+  font-weight: 200;
+}
+
+.exercise-name {
+  font-weight: 200;
+  margin-bottom: 5px;
+}
+
+
+.exercise-visual {
+  height: 140px;
+  padding: 20px;
+  background-image: url('/assets/chair-squats.png');
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.exercise-visual-name {
+  text-align: center;
+  font-weight: 400;
+  color: #757575;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.nav-buttons img {
+  width: 30px;
+}
+
+
+.cal-header {
+  color: #fff;
+  padding: 15px;
+  background-color: #59CDDE;
+}
+
+.year {
+  font-weight: 200;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cal-date {
+  font-weight: 500;
+}
+
+.cal-image {
+  width: 100%;
+}
+
+.cal-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cal-btns button {
+  margin: 40px 15px 10px 0;
+  color: #59CDDE;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.cal-btns button:hover {
+  cursor: pointer;
 }
